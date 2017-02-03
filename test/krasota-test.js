@@ -16,7 +16,7 @@ var ibem = require('fs')
     path = require("path"),
     fs = require("fs");
 
-var pp = require("zeHelpers").prettyPrint;
+var pp = require("ze-helpers").prettyPrint;
 
 var dir = path.dirname(module.filename),
     utf8 = { encoding:'utf8' },
@@ -1117,6 +1117,10 @@ describe('Meta info', function() {
 
     it.skip('should transform before and after comments', function () {
       testTransform('./ktransform/before-after-comments.bemhtml', {});
+    });
+
+    it('should transform regexp', function () {
+      testTransform('./ktransform/regexp.bemhtml', {});
     });
 
     // ----- bem-xjst4 ------------------------------------

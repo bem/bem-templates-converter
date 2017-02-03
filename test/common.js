@@ -15,7 +15,7 @@ var syntax = require(".."),
     krasota = require("krasota"),
     KParser = krasota.KrasotaJSParser;
 
-var pp = require("zeHelpers").prettyPrint;
+var pp = require("ze-helpers").prettyPrint;
 
 var common = exports;
 
